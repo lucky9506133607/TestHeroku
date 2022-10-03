@@ -8,7 +8,7 @@ op.add_argument("--headless")
 op.add_argument("--no-sandbox")
 op.add_argument("--disable-dev-sh-usage")
 driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=op)
-driver.get("https://youtube.com")
+driver.get("https://dev-veneta.myshopify.com/")
 print(driver.title)
 
 
