@@ -12,3 +12,5 @@ driver.get("https://dev-veneta.myshopify.com/")
 print(driver.title)
 driver.quit()
 
+
+
