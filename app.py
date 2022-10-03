@@ -10,5 +10,5 @@ op.add_argument("--disable-dev-sh-usage")
 driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=op)
 driver.get("https://dev-veneta.myshopify.com/")
 print(driver.title)
-
+driver.quit()
 
