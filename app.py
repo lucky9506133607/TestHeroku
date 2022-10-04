@@ -15,6 +15,4 @@ except Exception as e:
     print("Exception arrived", e)
 driver.get("https://venetablinds.com.au/")
 print(driver.title)
-driver.find_element(By.XPATH, '//*[@id="SiteNav"]/li[1]').click()
-print(driver.title)
 driver.quit()
