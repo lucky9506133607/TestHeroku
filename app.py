@@ -1,7 +1,6 @@
-import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-
+import os
 op = webdriver.ChromeOptions()
 op.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 op.add_argument("--headless")
