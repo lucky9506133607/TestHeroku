@@ -11,6 +11,8 @@ try:
     driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=op)
 except Exception as e:
     print("Exception arrived", e)
-driver.get("https://dev-veneta.myshopify.com/")
+driver.get("https://venetablinds.com.au/")
+print(driver.title)
+driver.find_element_by_xpath('//*[@id="SiteNav"]/li[1]').click()
 print(driver.title)
 driver.quit()
