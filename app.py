@@ -16,5 +16,6 @@ def Test():
 	print(driver.title)
 	driver.quit()
 
-if __name__ == '__main__':
-	Test()
+if __name__ == "__main__":    
+    while True:
+        Test()
