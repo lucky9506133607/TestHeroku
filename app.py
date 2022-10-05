@@ -11,7 +11,7 @@ def Test():
 	op.add_argument("--disable-dev-sh-usage")
 	try:
 	    print('in try block')
-	    driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=op)
+	    driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), options=op)
 	except Exception as e:
 	    print("Exception arrived", e)
 	driver.get("https://venetablinds.com.au/")
