@@ -20,6 +20,9 @@ def Test():
 	driver.quit()
 
 if __name__ == "__main__":
-	while True:
-		Test()
-		time.sleep(10)
+	Test()
+	print("Printed immediately.")
+	time.sleep(20)
+	print("Print after 20 seconds")
+		
+		
