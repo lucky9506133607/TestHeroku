@@ -19,3 +19,4 @@ def Test():
 if __name__ == "__main__":
 	while True:
 		Test()
+		time.sleep(10)
