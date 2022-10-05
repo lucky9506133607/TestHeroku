@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+import time
+from os import environ
 import os
 def Test():
 	op = webdriver.ChromeOptions()
